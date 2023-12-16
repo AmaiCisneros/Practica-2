@@ -12,7 +12,7 @@ Para realizar esta practica necesitas lo siguiente:
 Requisitos previos
 Para poder usar este repositorio necesitas entrar a la plataforma WOKWI.
 ### Instrucciones de preparación de entorno
-1- Abrir la terminal de programación y colocar la siguente programación:
+- 1.Abrir la terminal de programación y colocar la siguente programación:
 
 -#include "DHTesp.h"
 -#include <LiquidCrystal_I2C.h>
@@ -21,21 +21,21 @@ Para poder usar este repositorio necesitas entrar a la plataforma WOKWI.
 -DHTesp dhtSensor;
 
 
--void setup() {
+void setup() {
 
--  Serial.begin(115200);
-- dhtSensor.setup(DHT_PIN, DHTesp::DHT22);
--}
+Serial.begin(115200);
+dhtSensor.setup(DHT_PIN, DHTesp::DHT22);
+}
 
--void loop() {
+void loop() {
 
- - TempAndHumidity  data = dhtSensor.getTempAndHumidity();
- -  -Serial.println("Temp: " + String(data.temperature, 1) + "°C");
- -  Serial.println("Humidity: " + String(data.humidity, 1) + "%");
- -  Serial.println("---");
- -  delay(1000);
- -  }
-2-Instalar la libreria de DHT sensor library for ESPx como se muestra en la siguente imagen.
+  TempAndHumidity  data = dhtSensor.getTempAndHumidity();
+    Serial.println("Temp: " + String(data.temperature, 1) + "°C");
+    Serial.println("Humidity: " + String(data.humidity, 1) + "%");
+    Serial.println("---");
+   delay(1000);
+    }
+- 2.Instalar la libreria de DHT sensor library for ESPx como se muestra en la siguente imagen.
 ![](https://github.com/AmaiCisneros/Practica-2/blob/main/Screenshot_20231216-090032.png)
 3 - Hacer la conexion de DHT11 con la ESP32 como se muestra en la siguente imagen.
 ![](https://github.com/AmaiCisneros/Practica-2/blob/main/Screenshot_20231216-091256~2.png)
