@@ -36,4 +36,17 @@ Para poder usar este repositorio necesitas entrar a la plataforma WOKWI.
  -  delay(1000);
  -  }
 2-Instalar la libreria de DHT sensor library for ESPx como se muestra en la siguente imagen.
-![] 
+![](https://github.com/AmaiCisneros/Practica-2/blob/main/Screenshot_20231216-090032.png)
+3 - Hacer la conexion de DHT11 con la ESP32 como se muestra en la siguente imagen.
+![]
+Instrucciónes de operación
+Iniciar simulador.
+Visualizar los datos en el monitor serial.
+Colocar la temperatura y humedad dando doble click al sensor DHT11
+Resultados
+Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen:
+![]
+
+
+
+
